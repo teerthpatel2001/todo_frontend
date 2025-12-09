@@ -1,0 +1,132 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.main_div{
+  width: 100vw;
+  height: 100vh;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+.todo_inp{
+  padding: 10px;
+  width: 300px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.add_btn{
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.add_btn:hover{
+  background-color: #218838;
+}
+
+.priority_div{
+  margin-top: 20px;
+  display: flex;
+  margin-right: 50px;
+  gap: 30px;
+  font-size: 16px;
+}
+label{
+  cursor: pointer; 
+  font-size: large;
+  margin-bottom: 10px;
+}
+input[type="radio"] {
+  margin-right: 8px;
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+
+
+
+.todo_list{
+  margin-top: 30px;
+  width: 90%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  overflow-y: auto;
+
+}
+.high_priority{
+  width: 30%;
+  border-left: 5px solid red;
+  border: 1 px solid #210909;
+  padding-left: 10px;
+}
+.high_priority h2{
+  text-align: center;
+  margin-bottom: 20px;
+  color: red;
+}
+.medium_priority{
+  width: 30%;
+  border-left: 5px solid orange;
+  border: 1 px solid #7a4f09;
+  padding-left: 10px;
+}
+.medium_priority h2{
+  text-align: center;
+  margin-bottom: 20px;
+  color: orange;
+}
+.low_priority{
+  width: 30%;
+  border-left: 5px solid rgb(93, 145, 93);
+  border: 1 px solid #092109;
+  padding-left: 10px;
+}
+.low_priority h2{
+  text-align: center;
+  color: rgb(93, 145, 93);
+  margin-bottom: 20px;
+} 
+.todo_item{
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #888585;
+  border-radius: 5px;
+  margin: 5px;
+}
+.edit_btn, .delet_btn{
+  padding: 5px 10px;
+  margin: 0px 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+.delet_btn{
+  background-color: #dc3545;
+  margin-top: 5px;
+}
+.edit_btn:hover{
+  background-color: #0069d9;
+}
+.delet_btn:hover{
+  background-color: #c82333;
+}
